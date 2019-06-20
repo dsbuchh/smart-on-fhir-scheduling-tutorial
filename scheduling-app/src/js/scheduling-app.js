@@ -115,6 +115,7 @@ $('#clear-appointment').on('click', function(e) {
 });
 
 function appointmentCreate(slotReference, patientReference) {
+  console.log('appointment create');
   clearUI();
   $('#loading-row').show();
 
