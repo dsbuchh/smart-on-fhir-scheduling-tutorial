@@ -133,6 +133,7 @@ function appointmentCreate(slotReference, patientReference) {
       // Display 'Failed to write Appointment to FHIR server' if the call failed
       function(err) {
         clearUI();
+        console.log('error saving appt');
         console.log(err);
         $('#errors').html('<p>Failed to write Appointment to FHIR server</p>');
         $('#errors-row').show();
